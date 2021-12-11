@@ -18,7 +18,7 @@ function App() {
   const [navlink, setNavlink] = useState(true)
   const [poi, setPoi] = useState("")
   const [country, setCountry] = useState("")
-  const [query_data, setQuery_data] = useState()
+  const [query_data, setQuery_data] = useState([])
   const [active, setActive] = useState(1)
   const [page, setPages] = useState()
   const [pagination, setPagination] = useState(false)
@@ -664,7 +664,7 @@ function App() {
                   <Tabs
                     id="controlled-tab-example"
                     activeKey={tKey}
-                    onSelect={async (k) => {
+                    onSelect={(k) => {
                       settKey(k);
                       console.log(k)
                       if (k == "POI") {
