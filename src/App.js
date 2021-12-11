@@ -263,7 +263,7 @@ function App() {
     }
     handlenotsetBlock()
   }
-  const [baseURL, setBaseUrl] = useState("http://18.217.156.180:8000/search/")
+  const [baseURL, setBaseUrl] = useState("https://18.217.156.180:8000/search/")
   const getSerachResults = async() => {
     console.log(country)
     try{
@@ -405,7 +405,7 @@ function App() {
 
   const getOverviewData = () => {
      axios
-      .post("http://18.217.156.180:8000/overview/", JSON.stringify({
+      .post("https://18.217.156.180:8000/overview/", JSON.stringify({
         "poi_name": "*",
         "country": "",
         "search_query": "",
