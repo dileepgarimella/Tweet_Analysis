@@ -298,7 +298,7 @@ function App() {
 
       })
 
-     axios.get(`https://newsapi.org/v2/everything?q=${keyword}&sortBy=publishedAt&apiKey=9276436daf8a4d478fb840016f3e6d26`).then((response)=>{
+     axios.get(`https://gnews.io/api/v4/search?q=${keyword}&token=f853c18f30683375a6c87b483f74e432`).then((response)=>{
       console.log(response)
       let resp=response.data.articles
       setnews(resp)
